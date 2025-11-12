@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}user{% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <style>
+    </style>
+{% endblock %}
+
+
+{% block body %}
+{% if(name == "Aidan")%}
+    <h3>Welcome {{name}}</h3>
+{% else %}
+    <h3>Unknown name entered: {{name}}</h3>
+{% endif %}
+{% endblock %}
